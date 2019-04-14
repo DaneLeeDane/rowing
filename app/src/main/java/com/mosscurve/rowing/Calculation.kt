@@ -14,7 +14,7 @@ object Calculation {
     var sensorMap = mutableMapOf(A to "a", B to "b", FORWARD to false)
 
     // 적당한 값을 찾아가야 하는 계수
-    const val CONVERT_K = 8
+    const val CONVERT_K = 20
     const val BREAK_K = 20
     const val DECREASE_K = 0.005f
     var current_time = 0
