@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameActivity"
+        android:orientation="vertical"
+        android:background="#9ED5FF">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Total Distance: "
+                  android:textSize="18sp"
+                  android:gravity="center"
+                  android:layout_weight="1"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="20sp"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:id="@+id/tv_total_distance"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Time: "
+                  android:textSize="18sp"
+                  android:gravity="center"
+                  android:layout_weight="1"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="00:00:00"
+                  android:textSize="20sp"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:id="@+id/tv_current_time"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal" android:id="@+id/layout_player_container">
+
+        <!--<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="10100"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="10000"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="9900"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="9800"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="9700"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+        <!--</LinearLayout>-->
+
+        <include layout="@layout/inflate_player"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

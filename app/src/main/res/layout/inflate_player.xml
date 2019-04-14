@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:layout_weight="1">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="0.0 km/h"
+              android:textSize="20sp"
+              android:id="@+id/tv_current_velocity"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="0.0 m"
+              android:textSize="20sp"
+              android:id="@+id/tv_current_distance"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/ic_rowing"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:id="@+id/img_boat"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="찰리"
+              android:textSize="15sp"
+              android:id="@+id/tv_player_name"/>
+
+</LinearLayout>

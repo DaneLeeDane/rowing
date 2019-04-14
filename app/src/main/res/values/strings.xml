@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Rowing</string>
+    <string-array name="player_array">
+        <item>이지훈</item>
+        <item>이선화</item>
+        <item>이선미</item>
+    </string-array>
+
+    <string-array name="distance_array">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+    </string-array>
+
+    <string-array name="babel_array">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+    </string-array>
+</resources>

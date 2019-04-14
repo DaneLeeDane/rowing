@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="10dp"
+              android:background="#EEE2CD">
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:gravity="right">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Player: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Babel Weight: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Distance: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Time: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Avg Velocity: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Max Velocity: "
+                      android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="Date: "
+                      android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:gravity="left" android:layout_marginLeft="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="이지훈"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_player_name"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="10 kg"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_babel"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="2000 m"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_total_distance"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="00:21:45"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_time"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="11 km/h"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_avg_velocity"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="19 km/h"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_max_velocity"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="~~~"
+                      android:textSize="18sp"
+                      android:id="@+id/tv_result_date"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK"
+            android:id="@+id/btn_OK" android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired Devices"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginTop="20dp"/>
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:id="@+id/progress_connect"
+                 android:visibility="invisible"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/layout_paired_container"
+                  android:orientation="vertical">
+    </LinearLayout>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="disconnect" android:id="@+id/btn_disconnect"
+            android:background="@android:color/holo_blue_dark"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go ready page"
+            android:id="@+id/btn_go_ready" android:background="#84C0EE"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discovered Devices"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/layout_discovered_container"
+                  android:orientation="vertical">
+    </LinearLayout>
+
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="start discovery"
+            android:background="@android:color/holo_orange_light"
+            android:id="@+id/btn_start_discovery"/>
+
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:id="@+id/progress_discovery"
+                 android:visibility="invisible"/>
+
+</LinearLayout>
