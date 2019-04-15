@@ -153,12 +153,16 @@ class ModeActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
 
 
-class RecordAdapter(item: MutableList<JSONObject>): RecyclerView.Adapter<MyViewHolder>() {
+class RecordAdapter(items_: MutableList<JSONObject>): RecyclerView.Adapter<MyViewHolder>() {
     lateinit var context: Context
+    private lateinit var items: MutableList<JSONObject>
 
-    var items = item
+    init {
+        updateData(items_)
+    }
 
     fun updateData(data: MutableList<JSONObject>) {
+        data.reverse()
         items = data
     }
 
