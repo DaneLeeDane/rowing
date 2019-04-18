@@ -111,6 +111,13 @@ class ModeActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             json_object.put(RECORD_ID, key)
             records_array = records_array.plus(json_object).toMutableList() //주의! array에 다시 할당해주어야 한다.
         }
+
+        reorder()
+    }
+
+
+    private fun reorder() {
+        records_array.sortByDescending { it[RECORD_ID] as String }
     }
 
 
@@ -162,7 +169,6 @@ class RecordAdapter(items_: MutableList<JSONObject>): RecyclerView.Adapter<MyVie
     }
 
     fun updateData(data: MutableList<JSONObject>) {
-        data.reverse()
         items = data
     }
 
@@ -210,7 +216,7 @@ class RecordAdapter(items_: MutableList<JSONObject>): RecyclerView.Adapter<MyVie
         val builder = AlertDialog.Builder(context)
         with (builder) {
             setTitle("Are you sure???????????")
-            setPositiveButton("HELL YES") { dialog, which ->
+            setPositiveButton("HELL YES") { _, _ ->
                 val sp = context.getSharedPreferences(SP_RECORD, Context.MODE_PRIVATE)
                 sp.edit().remove(record_id).apply()
 
